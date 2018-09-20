@@ -3,7 +3,9 @@
     <div class="cover-inner">
       <div class="cover-contents">
         <h1>みんなで楽しむおしゃべり</h1>
-        <a href="" class="btn btn-success btn-lg">ボヤく</a>
+          <% unless logged_in? %>
+            <%= link_to 'ボヤく', signup_path, class: 'btn btn-success btn-lg' %>
+          <% end %>
       </div>
     </div>
   </div>
