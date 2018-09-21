@@ -4,11 +4,11 @@
       <div class="cover-contents">
         <h1>みんなで楽しむおしゃべり</h1>
           <% unless logged_in? %>
-            <%= link_to 'ボヤく', signup_path, class: 'btn btn-success btn-lg' %>
+            <%= link_to 'シャベる', signup_path, class: 'btn btn-success btn-lg' %>
+          <% else %>
+            <%= link_to 'シャベる', messages_path, class: 'btn btn-success btn-lg' %>
           <% end %>
       </div>
     </div>
   </div>
 <% end %>
-
-<p>テスト</p>
